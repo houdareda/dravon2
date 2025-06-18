@@ -68,7 +68,7 @@ html {
 }
 
 .image_btn {
-    width: 55%;
+    width: 60%;
     margin: 0 auto;
     padding: 10px 0;
 }
@@ -86,7 +86,7 @@ html {
 
 
 .hero ul li {
-    font-size: 4.9vw;
+    font-size: 5.2vw;
     color: #FFF;
     line-height: 1.35;
     padding: 5px 0;
@@ -231,13 +231,12 @@ html {
     background: linear-gradient( #D02114, #B21B10);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border-radius: 0 0 13px 13px;
 }
 
 .how_work .top_Sec h4 {
     background: black;
     color: #fff;
-    font-size: 5.8vw;
+    font-size: 5.5vw;
     line-height: 1.4;
     padding-bottom: 2px;
 }
