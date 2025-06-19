@@ -78,7 +78,7 @@ html {
 }
 
 .hero ul{
-    background: url(../img/BGGG.jpg);
+    background: url(../img/bggg.webp);
     background-position: center;
     background-size: cover;
     padding-top: 7px;
@@ -112,15 +112,13 @@ html {
 }
 
 .hero .image_btn {
-    width: 90%;
     padding-top: 0;
     padding-bottom: 5px;
 }
 
-.hero .image_btn img {
-    width: 60%;
-    margin: 0 auto
-}
+
+
+
 
 
 
@@ -204,27 +202,17 @@ html {
 .doctor .btm_doctor .text_top p.red{
     background: linear-gradient(#97150C , #C61F14)
 }
-.doctor .image_btn{
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
-.doctor .image_btn img{
-    width: 55%;
-    z-index: 100;
-}
-.doctor .image_btn a{
-    position: relative;
-}
+
 
 
 .how_work {
-    text-align: center
-}
-.how_work .top_Sec {
-    padding-top: 10px;
+    text-align: center;
+    background: linear-gradient(to left, #181818, #272727);
 }
 
+.how_work .top_Sec .text{
+    background: #fff;
+}
 .how_work .top_Sec p {
     font-size: 6.4vw;
     line-height: 1.4;
@@ -253,7 +241,6 @@ html {
 }
 
 .how_work .bg_btn_how_work {
-    background: linear-gradient(to left, #181818, #272727);
     padding-top: 8px;
 }
 
@@ -386,47 +373,54 @@ html {
         width: max-content;
         font-size: 25px
     }
-
-    .hero .top_image {
-        width: 73%;
-        margin: 0 auto
+    .image_btn{
+        width: 45%;
     }
-
-    .hero ul img {
-        width: 73%;
-        margin-inline: auto
-    }
-
+   .hero ul{
+    padding-top: 20px;
+   }
     .hero ul li {
-        font-size: 24px;
+        font-size: 28px;
         margin: 0 auto;
-        padding: 3px 12px
+        padding: 3px 12px;
+    }
+    .hero ul li.one,
+    .hero ul li.two{
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border-radius: 13px;
     }
 
-    .hero .image_btn,
     .hero ul li,
     .last_sec .div_form form {
         width: 70%
     }
 
-    .how_work .top_Sec h3,
-    .how_work .top_Sec p{
-        font-size: 35px
+    .how_work .top_Sec h4{
+        font-size:4.5vw;
     }
 
-    .how_work .top_Sec img,
+    
+    .how_work .top_Sec p{
+        font-size: 5vw;
+    }
+    .how_work .top_Sec img{
+        width: 80%;
+    }
+
     .last_sec .div_form form input,
     .last_sec .footer .boxs {
         width: 80%
     }
 
     .how_work .btm_work p {
-        font-size: 22px
+        font-size: 24px
     }
 
     .result .top_res h1 {
         font-size: 50px
     }
+
 
     .result .top_res h4 {
         font-size: 23px
@@ -439,6 +433,25 @@ html {
     .result .content {
         width: 75%;
         margin: 0 auto
+    }
+
+
+
+    .doctor .center h2{
+        font-size:4.5vw;
+    }
+    .doctor .center h3{
+        font-size: 3vw;
+    }
+    .doctor .btm_doctor .text_top p{
+        font-size: 3vw;
+    }
+
+
+
+
+    .result .important p{
+        font-size: 3vw;
     }
 
     .last_sec .div_form .flex_price {
@@ -471,6 +484,10 @@ html {
 
 @media (min-width:1000px) {
 
+    .image_btn{
+        width: 300px;
+    }
+
     .last_sec .div_form form input,
     .result .top_cont,
     .result .top_cont.right {
@@ -480,11 +497,26 @@ html {
     .flex_Sec {
         display: flex
     }
+    .result{
+        padding-top: 50px;
+    }
 
+    
     .flex_hero .result{
         background-color: #B12B29;
         display: flex;
-        align-items: end;
+        align-items: center;
+        flex-direction: column;
+    }
+    .result .important p{
+        font-size: 20px;
+    }
+    .result .important{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .result .important img{
+        width: 100px;
     }
 
     .hero,.doctor,
@@ -503,31 +535,38 @@ html {
         margin-top: 0;
     }
 
-    .doctor .btm_doctor .text_top p{
-        font-size: 22px;
-        padding: 30px 0;
+    .doctor .btm_doctor .text_top{
+        flex-direction: column;
     }
-    
+    .doctor .btm_doctor .text_top p{
+        font-size: 25px;
+        padding: 10px 0;
+        width: 70%;
+        margin: 0 auto 15px;
+        line-height: 1.2;
+    }
 
     .doctor .btm_doctor{
         margin-top: 0px;
     }
 
-    .doctor .image_btn img{
-        width: 45%;
+
+    .doctor .center{
+        margin-top: -40px;
     }
+    .doctor .center h2{
+        font-size: 30px;
+    }
+    .doctor .center h3{
+        font-size: 28px;
+    }
+
 
     .hero ul li{
         font-size: 20px
     }
 
-    .result .top_cont p {
-        font-size: 1.8vw
-    }
-
-    .result .top_cont {
-        margin-top: 20px
-    }
+ 
 
     .last_sec .div_form .content p,
     .last_sec .sm-p {
@@ -538,10 +577,19 @@ html {
         margin-top: 10px
     }
 
+    .how_work .top_Sec h4{
+        font-size: 27px;
+        padding: 10px 0;
+    }
     .how_work .top_Sec p {
-        font-size: 30px
+        font-size: 30px;
+        padding: 15px 0;
     }
 
+    .how_work .imghowworkdiv{
+        background: #fff;
+        padding: 10px 0;
+    }
     .how_work .top_Sec .text {
         padding-top: 0
     }
@@ -550,18 +598,12 @@ html {
         font-size: 25px
     }
 
-    .how_work .top_Sec img {
-        width: 500px
-    }
 
     .how_work .save p{
         font-size: 16px;
     }
     .how_work .save img{
         width: 55px;
-    }
-    .how_work .image_btn{
-        width: 45%;
     }
 
     .last_sec .div_form {
@@ -571,7 +613,8 @@ html {
     }
 
     .last_sec .div_form .div_flex {
-        width: 45%
+        width: 50%;
+        padding: 2.5%;
     }
 
     .last_sec form .div-btn .btn {
@@ -611,9 +654,14 @@ html {
 }
 
 @media (min-width:1300px) {
-    .hero .top_image {
-        width: 70%;
-        margin: 0 auto
+    .image_btn{
+        width: 350px;
+    }
+
+    .doctor .btm_doctor .text_top p{
+        font-size: 28px;
+        width: max-content;
+        padding: 5px 50px;
     }
 
 .hero ul li{
@@ -631,14 +679,10 @@ html {
         font-size: 22px
     }
 
-    .how_work .btm_work p {
-        font-size: 20px
-    }
-
 }
 
 body.thanks_page_page {
-    background: url(../img/thanks.jpg);
+    background: url(../img/thanks.webp);
     background-size: cover;
     background-position: top center;
     min-height: 100vh
